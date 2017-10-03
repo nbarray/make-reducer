@@ -13,17 +13,19 @@ or
 ```js
   import reducr from 'reducr'
 
+  // The first agument for reducr() is the initial state (used when undefined
+  // is passed as the prevState)
   // You can use 3 syntaxes to define a reducing behaviour:
   // Either use a function:
   //   (prevState, action) => nextState
-  // Or just the nextState if it does not depends on the prevState/action
+  // Or just the nextState if it does not depend on the prevState/action
   //   nextState
   //
   // The last one is for the default case:
   //
-  // If nothing is specified, prevState is return.
-  // Else if the key 'default' is specified, it is used for any unspecified
+  // If the key 'default' is specified, it is used to reduce any unspecified
   // action.type
+  // Else, if no 'default' key is specified, prevState is returned.
 
   // Example:
   const counterReducer = reducr(0, {
