@@ -1,5 +1,5 @@
 {
-  "name": "make-reducer",
+  "name": "reducr",
   "version": "1.0.0",
   "description": "A simple helper function to create Redux-like reducers",
   "main": "index.js",
