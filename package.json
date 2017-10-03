@@ -1,0 +1,16 @@
+{
+  "name": "make-reducer",
+  "version": "1.0.0",
+  "description": "A simple helper function to create Redux-like reducers",
+  "main": "index.js",
+  "repository": "git@github.com:nbarray/make-reducer.git",
+  "author": "Nicolas Barray <nbarray@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist --presets babel-preset-es2015"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
